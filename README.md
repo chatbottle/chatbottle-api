@@ -54,14 +54,13 @@ curl -v https://api.chatbottle.co/v1/updates/573c704ef2104b11a8b910a2 \
 -d '{
   "Platform": 2,
   "Messaging": [
+  
     {
-      "Id": "514829903",
+      "ChatId": "51002efa-2054-4cc1-aeb3-0ee098d4e34a",
+      "UserId": "1646261728",
       "Text": "Hello world!",
-      "Recipient": {
-        "Id": 1544489710
-      },
-      "Timestamp": 1464774483,
-      "Date": "2016-05-26T11:41:49.1948699Z"
+      "Direction": "Out",
+      "Id": "712329970"
     }    
   ]
 }
@@ -144,13 +143,11 @@ Authorization: 79bc1e9c1e152ddccace522b96649c6adea398b6
   "Platform": 2,
   "Messaging": [
     {
-      "Id": "514829903",
+      "ChatId": "51002efa-2054-4cc1-aeb3-0ee098d4e34a",
+      "UserId": "1646261728",
       "Text": "Hello world!",
-      "Recipient": {
-        "Id": 1544489710
-      },
-      "Timestamp": 1464774483,
-      "Date": "2016-05-26T11:41:49.1948699Z"
+      "Direction": "Out",
+      "Id": "712329970"
     }    
   ]
 }
