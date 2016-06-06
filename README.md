@@ -8,7 +8,9 @@
 1. Who can help me build an integration?
 
 ### What is ChatBottle?
-[ChatBottle](https://chatbottle.co/?ref=github) is a tool to discover the best chatbots. The best means that people actually use it and the bots are really helpful. 
+[ChatBottle](https://chatbottle.co/?ref=github) is a tool to discover the best chatbots. It's like App Store or Google, but for chatbots.
+
+You are probably know thousands of developers are working on bots right now. In a few months the market will be crowded and it will be much more difficult to find a bot. ChatBottle is one more channel to drive traffic to your bot. Integrate your bots with the API to join the club.
 Whenever a bot receives or sends a message ChatBottle is notified. It allows to gather the data and measure how people actually use the bot. 
 Based on the collected data ChatBottle rank the bots.
 
@@ -21,13 +23,11 @@ The ChatBottle Developer Platform is a way for anyone to integrate their bot to 
 Integrating with ChatBottle is easy and should take a developer about a few minutes. What you need to do is just to forward sent and received messages to ChatBottle REST API.  
 
 ### Why to integrate with ChatBottle?
-Thousands of people started developing bots after Messenger Platform was launched at F8. In a few months, hundreds of great bots will be released. For bots developers, it will be extremely hard to get people use a bot.
+You are probably know that thousands of developers are working on bots right now. In a few months the market will be crowded and it will be much more difficult for people to find chatbots. Bots developers will need to find a repeatable and affordable way to aquire new users.
 
-Integration with ChatBottle allows people discover your bot and drives traffic to the bot. 
+ChatBottle is one more customer acquisition channel to drive traffic to your bot. Integration with ChatBottle allows people discover your bot and start acutally using it.
+
 Promoting a chatbot with ChatBottle is cheaper than advertising, content marketing or SEO. Once the bot is integrated it will be automatically ranked and listed in ChatBottle BotStore.
-
-
-It’s important to integrate with ChatBottle as early as possible. Even before the official launch of a bot. The more data ChatBottle collects, the better our algorithms analyze your bot.
 
 ### How it works?
 Your bot forwards every message it sent or received to ChatBottle API. The messages are analyzed by our ranking algorithms and the bot is ranked. 
@@ -35,18 +35,20 @@ ChatBottle bot rank works similar to Google PageRank. It’s important how peopl
 
 ChatBottle ranks bots based on retention and other metrics. Having not many but addicted users is a good sign for ChatBottle algorithms. As a result, your bot is ranked higher and more people find out about it.
 
+It’s important to integrate with ChatBottle as early as possible. Even before the official launch of a bot. ChatBottle algorithms needs some data to properly measure and rank your bot. We recommend to start using the API at least a week before actual public launch.
+
 ### Who can help me?
-If you have questions, you can always [contact us](mailto:agamanuk@gmail.com)! If you found a bug feel free to [create an issue](https://github.com/chatbottle/chatbottle.github.io/issues). 
+If you have questions, you can always [contact us](mailto:agamanuk@gmail.com)! If you found a bug feel free to [create an issue](https://github.com/chatbottle/chatbottle-api/issues). 
 
 ## Getting Started
-This is a simplified walkthrough to see the platform in action. Read the [API Guide](https://github.com/chatbottle/chatbottle.github.io#api) to learn about the features in more detail. Use curl to run tThe following code snippets.
+This is a simplified walkthrough to see the platform in action. Read the [API Guide](https://github.com/chatbottle/chatbottle-api#api) to learn about the features in more detail. Use curl to run tThe following code snippets.
 
-1. Register at [chatbottle.co](chatbottle.co).
+1. Register at [chatbottle.co](https://chatbottle.co).
 2. Create a bot at the dashboard
 3. Enable chatbot platform. Messenger and Telegram are supported today.
 4. Every time your bots sends or received a message call ChatBottle Updates API. Use generated Authorization token and ChatBottle Bot id to make calls like this:
 ```
-curl -v http://api.chatbottle.co/v1/updates/573c704ef2104b11a8b910a2 \
+curl -v https://api.chatbottle.co/v1/updates/573c704ef2104b11a8b910a2 \
 -H "Authorization: 79bc1e9c1e152ddccace522b96649c6adea398b6" \
 -H "Content-Type: application/json" \
 -d '{
@@ -72,10 +74,6 @@ curl -v http://api.chatbottle.co/v1/updates/573c704ef2104b11a8b910a2 \
 
 ### Schema
 All API access is over HTTPS, and accessed from the `https://api.chatbottle.co`. All data is sent and received as JSON.
-All timestamps are returned in ISO 8601 format:
-```
-YYYY-MM-DDTHH:MM:SSZ
-```
 
 ### Root Endpoint
 You can issue a GET request to the root endpoint to get all the endpoint categories that the API supports:
@@ -136,7 +134,7 @@ Make a `POST` request to `https://api.chatbottle.co/updates/{bot-id}/` with your
 
 #### Full request
 ```
-POST http://api.chatbottle.co/v1/updates/573c704ef2104b11a8b910a2/ HTTP/1.1
+POST https://api.chatbottle.co/v1/updates/573c704ef2104b11a8b910a2/ HTTP/1.1
 Content-Type: application/json
 Host: api.chatbottle.co
 Content-Length: 250
