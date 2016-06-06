@@ -10,7 +10,7 @@
 ### What is ChatBottle?
 [ChatBottle](https://chatbottle.co/?ref=github) is a tool to discover the best chatbots. It's like App Store or Google, but for chatbots.
 
-You are probably know thousands of developers are working on bots right now. In a few months the market will be crowded and it will be much more difficult to find a bot. ChatBottle is one more channel to drive traffic to your bot. Integrate your bots with the API to join the club.
+You probably know thousands of developers are working on bots right now. In a few months, the market will be crowded and it will be much more difficult to find a chatbot. ChatBottle is one more channel to drive traffic to your bot. Integrate your bots with the API to join the club.
 Whenever a bot receives or sends a message ChatBottle is notified. It allows to gather the data and measure how people actually use the bot. 
 Based on the collected data ChatBottle rank the bots.
 
