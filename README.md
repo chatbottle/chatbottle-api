@@ -8,12 +8,13 @@
 1. Who can help me build an integration?
 
 ### What is ChatBottle?
-ChatBottle is a tool to discover the best chatbots. The best means that people actually use it and the bots are really helpful. 
+[ChatBottle](https://chatbottle.co/?ref=github) is a tool to discover the best chatbots. The best means that people actually use it and the bots are really helpful. 
 Whenever a bot receives or sends a message ChatBottle is notified. It allows to gather the data and measure how people actually use the bot. 
 Based on the collected data ChatBottle rank the bots.
 
 ### What is the Developer Platform?
 The ChatBottle Developer Platform is a way for anyone to integrate their bot to ChatBottle. There are two main reasons for integrating:
+
 1. ChatBottle BotStore drives a high-quality audience to you bot.
 2. So that you can learn how your bots are used, review analytics and setup metrics.
 
