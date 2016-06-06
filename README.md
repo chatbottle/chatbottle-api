@@ -23,9 +23,9 @@ The ChatBottle Developer Platform is a way for anyone to integrate their bot to 
 Integrating with ChatBottle is easy and should take a developer about a few minutes. What you need to do is just to forward sent and received messages to ChatBottle REST API.  
 
 ### Why to integrate with ChatBottle?
-You are probably know that thousands of developers are working on bots right now. In a few months the market will be crowded and it will be much more difficult for people to find chatbots. Bots developers will need to find a repeatable and affordable way to aquire new users.
+You probably know that thousands of developers are working on bots right now. In a few months, the market will be crowded and it will be much more difficult for people to find chatbots. Bots developers will need to find a repeatable and affordable way to acquire new users.
 
-ChatBottle is one more customer acquisition channel to drive traffic to your bot. Integration with ChatBottle allows people discover your bot and start acutally using it.
+ChatBottle is one more customer acquisition channel to drive traffic to your bot. Integration with ChatBottle allows people discover your bot and start actually using it.
 
 Promoting a chatbot with ChatBottle is cheaper than advertising, content marketing or SEO. Once the bot is integrated it will be automatically ranked and listed in ChatBottle BotStore.
 
@@ -35,7 +35,7 @@ ChatBottle bot rank works similar to Google PageRank. It’s important how peopl
 
 ChatBottle ranks bots based on retention and other metrics. Having not many but addicted users is a good sign for ChatBottle algorithms. As a result, your bot is ranked higher and more people find out about it.
 
-It’s important to integrate with ChatBottle as early as possible. Even before the official launch of a bot. ChatBottle algorithms needs some data to properly measure and rank your bot. We recommend to start using the API at least a week before actual public launch.
+It’s important to integrate with ChatBottle as early as possible. Even before the official launch of a bot. ChatBottle algorithms need some data to properly measure and rank your bot. We recommend starting using the API at least a week before actual public launch.
 
 ### Who can help me?
 If you have questions, you can always [contact us](mailto:agamanuk@gmail.com)! If you found a bug feel free to [create an issue](https://github.com/chatbottle/chatbottle-api/issues). 
