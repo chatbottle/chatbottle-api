@@ -57,10 +57,10 @@ curl -v https://api.chatbottle.co/v1/updates/[chatbottle bot id] \
   
     {
       "Id": "712329970",
-      "ChatId": "51002efa-2054-4cc1-aeb3-0ee098d4e34a",
-      "UserId": "1646261728",
       "Text": "Hello world!",
-      "Direction": "Out"   
+      "UserId": "1646261728",
+      "Direction": "Out",   
+      "ChatId": "51002efa-2054-4cc1-aeb3-0ee098d4e34a"
     }    
   ]
 }
@@ -143,11 +143,11 @@ Authorization: 79bc1e9c1e152ddccace522b96649c6adea398b6
   "Platform": 2,
   "Messaging": [
     {
-       "Id": "712329970",
-      "ChatId": "51002efa-2054-4cc1-aeb3-0ee098d4e34a",
-      "UserId": "1646261728",
+      "Id": "712329970",
       "Text": "Hello world!",
-      "Direction": "Out"     
+      "UserId": "1646261728",      
+      "Direction": "Out"   
+      "ChatId": "51002efa-2054-4cc1-aeb3-0ee098d4e34a"  
     }    
   ]
 }
