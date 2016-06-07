@@ -126,8 +126,8 @@ Make a `POST` request to `https://api.chatbottle.co/updates/{bot-id}/` with your
 | Messaging        | no				              | A list of messages your bot sent or received |
 | Messaging.Id     | yes					      | An external message id |
 | Messaging.Text   | yes						  | A message text. Omitted for media messages    |
-| Messaging.Recipient | no 					  | A bot id for incoming messages; A recipient id for outgoing messages |
-| Messaging.Timestamp | no 					  | A message sent time 						  |
+| Messaging.UserId | no 				     	  | An id of the user who sent or received a message from the bot |
+| Messaging.Direction | no 						  | **In** for incoming and **Out** for outcoming messanges						  |
 
 
 #### Full request
