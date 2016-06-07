@@ -133,7 +133,7 @@ Make a `POST` request to `https://api.chatbottle.co/updates/{bot-id}/` with your
 
 #### Full request
 ```
-POST https://api.chatbottle.co/v1/updates/573c704ef2104b11a8b910a2/ HTTP/1.1
+POST https://api.chatbottle.co/v1/updates/573eb74ff210400438505235/ HTTP/1.1
 Content-Type: application/json
 Host: api.chatbottle.co
 Content-Length: 250
