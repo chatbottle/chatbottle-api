@@ -146,7 +146,7 @@ Authorization: 79bc1e9c1e152ddccace522b96649c6adea398b6
       "Id": "712329970",
       "Text": "Hello world!",
       "UserId": "1646261728",      
-      "Direction": "Out"   
+      "Direction": "Out",   
       "ChatId": "51002efa-2054-4cc1-aeb3-0ee098d4e34a"  
     }    
   ]
