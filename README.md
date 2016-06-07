@@ -65,7 +65,6 @@ curl -v https://api.chatbottle.co/v1/updates/573c704ef2104b11a8b910a2 \
   ]
 }
 '
-'
 ```
 
 
