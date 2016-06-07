@@ -46,7 +46,7 @@ This is a simplified walkthrough to see the platform in action. Read the [API Gu
 1. Register at [chatbottle.co](https://chatbottle.co).
 2. Create a bot at the dashboard
 3. Enable chatbot platform. Messenger and Telegram are supported today.
-4. Every time your bots send or received a message call ChatBottle Updates API. Use generated Authorization token and ChatBottle Bot id to make calls like this:
+4. Every time your bots send or received a message call ChatBottle Updates API. Use generated **Authorization token** and **ChatBottle Bot Id** to make calls like this:
 ```
 curl -v https://api.chatbottle.co/v1/updates/573c704ef2104b11a8b910a2 \
 -H "Authorization: 79bc1e9c1e152ddccace522b96649c6adea398b6" \
