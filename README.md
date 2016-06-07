@@ -48,8 +48,8 @@ This is a simplified walkthrough to see the platform in action. Read the [API Gu
 3. Enable chatbot platform. Messenger and Telegram are supported today.
 4. Every time your bots send or received a message call ChatBottle Updates API. Use generated **Authorization token** and **ChatBottle Bot Id** to make calls like this:
 ```
-curl -v https://api.chatbottle.co/v1/updates/573c704ef2104b11a8b910a2 \
--H "Authorization: 79bc1e9c1e152ddccace522b96649c6adea398b6" \
+curl -v https://api.chatbottle.co/v1/updates/[chatbottle bot id] \
+-H "Authorization: [token]" \
 -H "Content-Type: application/json" \
 -d '{
   "Platform": 2,
@@ -132,7 +132,7 @@ Make a `POST` request to `https://api.chatbottle.co/updates/{bot-id}/` with your
 
 #### Full request
 ```
-POST https://api.chatbottle.co/v1/updates/573c704ef2104b11a8b910a2/ HTTP/1.1
+POST https://api.chatbottle.co/v1/updates/**573c704ef2104b11a8b910a2**/ HTTP/1.1
 Content-Type: application/json
 Host: api.chatbottle.co
 Content-Length: 250
