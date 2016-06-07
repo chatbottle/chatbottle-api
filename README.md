@@ -123,7 +123,7 @@ Make a `POST` request to `https://api.chatbottle.co/updates/{bot-id}/` with your
  ----------------- | ---------------------------- | ------------------
 | Platform         | no  			              | Chatbot platform. Messenger = **1**, Telegram = **2**, etc. See the [list of supported platforms](https://github.com/chatbottle/chatbottle-api/#supported-chatbot-platforms) for details   |
 | Messaging        | no				              | A list of messages your bot sent or received |
-| Messaging.Id     | yes					      | An external message id |
+| Messaging.Id     | no					      | An external message id |
 | Messaging.Text   | yes						  | A message text. Omitted for media messages    |
 | Messaging.UserId | no 				     	  | An id of the user who sent or received a message from the bot |
 | Messaging.Direction | no 						  | **In** for incoming and **Out** for outgoing messages|
