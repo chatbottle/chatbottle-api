@@ -59,8 +59,7 @@ curl -v https://api.chatbottle.co/v1/updates/[chatbottle bot id] \
       "Id": "712329970",
       "Text": "Hello world!",
       "UserId": "1646261728",
-      "Direction": "Out",   
-      "ChatId": "51002efa-2054-4cc1-aeb3-0ee098d4e34a"
+      "Direction": "Out"
     }    
   ]
 }
@@ -128,7 +127,6 @@ Make a `POST` request to `https://api.chatbottle.co/updates/{bot-id}/` with your
 | Messaging.Text   | yes						  | A message text. Omitted for media messages    |
 | Messaging.UserId | no 				     	  | An id of the user who sent or received a message from the bot |
 | Messaging.Direction | no 						  | **In** for incoming and **Out** for outcoming messanges|
-| Messaging.ChatId |  yes                         | Id of the a chat if available
 
 
 #### Full request
@@ -146,8 +144,7 @@ Authorization: 79bc1e9c1e152ddccace522b96649c6adea398b6
       "Id": "712329970",
       "Text": "Hello world!",
       "UserId": "1646261728",      
-      "Direction": "Out",   
-      "ChatId": "51002efa-2054-4cc1-aeb3-0ee098d4e34a"  
+      "Direction": "Out" 
     }    
   ]
 }
