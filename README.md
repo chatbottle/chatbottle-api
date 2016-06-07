@@ -41,7 +41,7 @@ It’s important to integrate with ChatBottle as early as possible. Even before 
 If you have questions, you can always [contact us](mailto:agamanuk@gmail.com)! If you found a bug feel free to [create an issue](https://github.com/chatbottle/chatbottle-api/issues). 
 
 ## Getting Started
-This is a simplified walkthrough to see the platform in action. Read the [API Guide](https://github.com/chatbottle/chatbottle-api#api) to learn about the features in more detail. Use curl to run tThe following code snippets.
+This is a simplified walkthrough to see the platform in action. Read the [API Guide](https://github.com/chatbottle/chatbottle-api#api) to learn about the features in more detail. Use curl to run the following code snippets.
 
 1. Register at [chatbottle.co](https://chatbottle.co).
 2. Create a bot at the dashboard
