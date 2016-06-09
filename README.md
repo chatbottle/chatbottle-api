@@ -24,8 +24,7 @@ Integrating with ChatBottle is easy and should take a developer about a few minu
 
 ### Why to integrate with ChatBottle?
 
-
-ChatBottle is one more customer acquisition channel to drive traffic to your bot. Integration with ChatBottle allows people discover your bot and start actually using it.
+ChatBottle is one more customer acquisition channel to drive traffic to your bot. Integration with ChatBottle allows to get news users and  return existing ones.
 
 Promoting a chatbot with ChatBottle is cheaper than advertising, content marketing or SEO. Once the bot is integrated it will be automatically ranked and listed in ChatBottle BotStore.
 
