@@ -23,7 +23,7 @@ The ChatBottle Developer Platform is a way for anyone to integrate their bot to 
 Integrating with ChatBottle is easy and should take a developer about a few minutes. What you need to do is just to forward sent and received messages to ChatBottle REST API.  
 
 ### Why to integrate with ChatBottle?
-You probably know that thousands of developers are working on bots right now. In a few months, the market will be crowded and it will be much more difficult for people to find chatbots. Bots developers will need to find a repeatable and affordable way to acquire new users.
+
 
 ChatBottle is one more customer acquisition channel to drive traffic to your bot. Integration with ChatBottle allows people discover your bot and start actually using it.
 
