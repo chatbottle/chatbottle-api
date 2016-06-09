@@ -12,7 +12,7 @@
 
 You probably know thousands of developers are working on bots right now. In a few months, the market will be crowded and it will be much more difficult to find a chatbot. ChatBottle is one more channel to drive traffic to your bot. Integrate your bots with the API to join the club.
 Whenever a bot receives or sends a message ChatBottle is notified. It allows to gather the data and measure how people actually use the bot. 
-Based on the collected data ChatBottle rank the bots.
+Based on the collected data ChatBottle ranks the bots.
 
 ### What is the Developer Platform?
 The ChatBottle Developer Platform is a way for anyone to integrate their bot to ChatBottle. There are two main reasons for integrating:
