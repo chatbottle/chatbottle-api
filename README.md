@@ -51,7 +51,6 @@ curl -v https://api.chatbottle.co/v1/updates/[chatbottle bot id] \
 -H "Authorization: [token]" \
 -H "Content-Type: application/json" \
 -d '{
-  "Platform": 2,
   "Messaging": [
   
     {
@@ -104,7 +103,7 @@ There are a few predefined chatbot platforms in the system:
 - Kik = 3, coming soon
 - Slack = 4, coming soon
 
-Use the string(case-insensitive) or the numeric value in your requests. If you're using any other platform please [let us know](mailto:agamanuk@gmail.com).
+If you're using any other platform please [let us know](mailto:agamanuk@gmail.com).
 
 ## Updates API
 - To use updates API you need to know ChatBottle Bot Id. You can find it at the developers dashboard.
@@ -120,7 +119,6 @@ Make a `POST` request to `https://api.chatbottle.co/updates/{bot-id}/` with your
 ### Parameters 
 |    Parameter     | Optional?                    | Description         |
  ----------------- | ---------------------------- | ------------------
-| Platform         | no  			              | Chatbot platform. Messenger = **1**, Telegram = **2**, etc. See the [list of supported platforms](https://github.com/chatbottle/chatbottle-api/#supported-chatbot-platforms) for details   |
 | Messaging        | no				              | A list of messages your bot sent or received |
 | Messaging.Id     | no					      | An external message id |
 | Messaging.Text   | yes						  | A message text. Omitted for media messages    |
@@ -137,7 +135,6 @@ Content-Length: 250
 Authorization: 79bc1e9c1e152ddccace522b96649c6adea398b6
 
 {
-  "Platform": 2,
   "Messaging": [
     {
       "Id": "712329970",
