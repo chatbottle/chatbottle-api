@@ -37,7 +37,7 @@ ChatBottle ranks bots based on retention and other metrics. Having not many but 
 It’s important to integrate with ChatBottle as early as possible. Even before the official launch of a bot. ChatBottle algorithms need some data to properly measure and rank your bot. We recommend starting using the API at least a week before actual public launch.
 
 ### Who can help me?
-If you have questions, you can always [email](mailto:agamanuk@gmail.com) or [skype us](skype:gamanuk_alexander?call)! If you found a bug feel free to [create an issue](https://github.com/chatbottle/chatbottle-api/issues). 
+If you have questions, you can always [email](mailto:agamanuk@gmail.com) or skype us(gamanuk_alexandeк)! If you found a bug feel free to [create an issue](https://github.com/chatbottle/chatbottle-api/issues). 
 
 ## Getting Started
 This is a simplified walkthrough to see the platform in action. Read the [API Guide](https://github.com/chatbottle/chatbottle-api#api) to learn about the features in more detail. Use curl to run the following code snippets.
