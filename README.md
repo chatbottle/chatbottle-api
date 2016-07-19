@@ -149,4 +149,8 @@ Authorization: 79bc1e9c1e152ddccace522b96649c6adea398b6
 #### Response
 ```
 HTTP/1.1 200 OK
+Content-Length: 16
+Content-Type: application/json
+
+{"success":true}
 ```
