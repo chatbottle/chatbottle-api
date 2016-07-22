@@ -77,7 +77,7 @@ Make a `POST` request to `https://api.chatbottle.co/updates/messenger/{bot-id}/`
 Make sure to set the 'Content-Type' header to 'application/json'
 `POST https://api.chatbottle.co/v1/updates/messenger/**{bot-id}**/?direction=**in**&token=**{your token}**`
 
-Request body
+**Request body**
 ```
 POST http://dev.api.chatbottle.co/v1/updates/messenger/573eb74ff210400438505235/?direction=in HTTP/1.1
 Content-Type: application/json
