@@ -18,18 +18,18 @@ Based on the collected data ChatBottle ranks the bots.
 The ChatBottle Developer Platform is a way for anyone to integrate their bot to ChatBottle. There are two main reasons for integrating:
 
 1. ChatBottle Search drives a high-quality audience to you bot.
-2. So that you can learn how your bots are used, review analytics and setup metrics.
+2. So that you can learn how your bots are used, review analytics and analyze conversations.
 
-Integrating with ChatBottle is easy and should take a developer about a few minutes. What you need to do is just to forward sent and received messages to ChatBottle REST API.  
+Integrating with ChatBottle is easy and should take a developer about a few minutes. What you need to do is just to **forward every message your bot sent and received to ChatBottle REST API**.  
 
 ### Why to integrate with ChatBottle?
 
-ChatBottle is one more customer acquisition channel to drive traffic to your bot. Integration with ChatBottle allows to get news users and  return existing ones.
+ChatBottle is one more customer acquisition channel to drive traffic to your bot. Integration with ChatBottle allows to get news users and reactivate existing ones.
 
 Promoting a chatbot with ChatBottle is cheaper than advertising, content marketing or SEO. Once the bot is integrated it will be automatically ranked and listed in ChatBottle Search.
 
 ### How it works?
-Your bot forwards every message it sent or received to ChatBottle API. The messages are analyzed by our ranking algorithms and the bot is ranked. 
+Your bot forwards every message it sent or received to the ChatBottle API. The messages are analyzed by our ranking algorithms and the bot is ranked. 
 ChatBottle bot rank works similar to Google PageRank. It’s important how people interact with a chatbot, how often and how helpful is the bot.
 
 ChatBottle ranks bots based on retention and other metrics. Having not many but addicted users is a good sign for ChatBottle algorithms. As a result, your bot is ranked higher and more people discover it.
