@@ -77,7 +77,7 @@ Make a `POST` request to `https://api.chatbottle.co/updates/messenger/{bot-id}/`
 Make sure to set the 'Content-Type' header to 'application/json'
 `POST https://api.chatbottle.co/v1/updates/messenger/**{bot-id}**/?direction=**in**&token=**{your token}**`
 
-**Request body**
+#### Full request example(copy, paste and execute it)
 ```
 POST http://dev.api.chatbottle.co/v1/updates/messenger/573eb74ff210400438505235/?direction=in HTTP/1.1
 Content-Type: application/json
@@ -127,26 +127,6 @@ Authorization: 79bc1e9c1e152ddccace522b96649c6adea398b6
 ```
 
 Note: _ChatBottle accepts any Facebook Messenger structured message. Just forward everything you send or receive from Facebook._
-
-#### Full request example(copy, paste and execute it)
-```
-POST https://api.chatbottle.co/v1/updates/573eb74ff210400438505235/ HTTP/1.1
-Content-Type: application/json
-Host: api.chatbottle.co
-Content-Length: 250
-Authorization: 79bc1e9c1e152ddccace522b96649c6adea398b6
-
-{
-  "Messaging": [
-    {
-      "Id": "712329970",
-      "Text": "Hello world!",
-      "UserId": "1646261728",      
-      "Direction": "Out" 
-    }    
-  ]
-}
-```
 
 ------
 ### Telegram 
