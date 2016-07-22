@@ -17,7 +17,7 @@ Based on the collected data ChatBottle ranks the bots.
 ### What is the Developer Platform?
 The ChatBottle Developer Platform is a way for anyone to integrate their bot to ChatBottle. There are two main reasons for integrating:
 
-1. ChatBottle BotStore drives a high-quality audience to you bot.
+1. ChatBottle Search drives a high-quality audience to you bot.
 2. So that you can learn how your bots are used, review analytics and setup metrics.
 
 Integrating with ChatBottle is easy and should take a developer about a few minutes. What you need to do is just to forward sent and received messages to ChatBottle REST API.  
@@ -32,7 +32,7 @@ Promoting a chatbot with ChatBottle is cheaper than advertising, content marketi
 Your bot forwards every message it sent or received to ChatBottle API. The messages are analyzed by our ranking algorithms and the bot is ranked. 
 ChatBottle bot rank works similar to Google PageRank. It’s important how people interact with a chatbot, how often and how helpful is the bot.
 
-ChatBottle ranks bots based on retention and other metrics. Having not many but addicted users is a good sign for ChatBottle algorithms. As a result, your bot is ranked higher and more people find out about it.
+ChatBottle ranks bots based on retention and other metrics. Having not many but addicted users is a good sign for ChatBottle algorithms. As a result, your bot is ranked higher and more people discover it.
 
 It’s important to integrate with ChatBottle as early as possible. Even before the official launch of a bot. ChatBottle algorithms need some data to properly measure and rank your bot. We recommend starting using the API at least a week before actual public launch.
 
