@@ -43,24 +43,7 @@ This is a simplified walkthrough to see the platform in action. Read the [API Gu
 
 1. Register at [chatbottle.co](https://chatbottle.co);
 2. Register an existing chat bost at the dashboard;
-3. Every time your bots send or receive a message call ChatBottle API. Use generated **Authorization token** and **ChatBottle Bot Id** to make calls like this:
-```
-curl -v https://api.chatbottle.co/v1/updates/[chatbottle bot id] \
--H "Authorization: [token]" \
--H "Content-Type: application/json" \
--d '{
-  "Messaging": [
-  
-    {
-      "Id": "712329970",
-      "Text": "Hello world!",
-      "UserId": "1646261728",
-      "Direction": "Out"
-    }    
-  ]
-}
-'
-```
+3. Every time your bots send or receive a message call ChatBottle API. Use generated **Authorization token** and **ChatBottle Bot Id** to make calls.
 
 ## API
 
