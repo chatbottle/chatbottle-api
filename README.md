@@ -62,7 +62,6 @@ curl -v https://api.chatbottle.co/v1/updates/[chatbottle bot id] \
 '
 ```
 
-
 ## API
 
 ### Schema
@@ -90,7 +89,7 @@ This should only be used in server to server scenarios. Don't leak your authenti
 
 
 ### Send an update  
-`POST /updates/{bot-id}/`
+`POST https://api.chatbottle.co/v1/updates/{bot-id}/`
 
 Post a message or any other update to ChatBottle.
 Make a `POST` request to `https://api.chatbottle.co/updates/{bot-id}/` with your ChatBottle Bot ID and Authorization token. In the body of the request, you must have the following data in a JSON format:
