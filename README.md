@@ -70,13 +70,13 @@ All API access is over HTTPS, and accessed from the `https://api.chatbottle.co`.
 ### Authentication
 There are three ways to authenticate through ChatBottle API:
 
-#### 1. Send authorization token as HTTP Authorization header
+#### 1. Send an authorization token as a HTTP Authorization header
 ```
 curl -H "Authorization: OAUTH-TOKEN" https://api.chatbottle.co
 
 ```
 
-#### 2. Send authorization token as token parameter
+#### 2. Send an authorization token as a token parameter
 ```
 curl https://api.chatbottle.co/?token=OAUTH-TOKEN
 ```
