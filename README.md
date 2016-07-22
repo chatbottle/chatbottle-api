@@ -84,18 +84,8 @@ curl https://api.chatbottle.co/?token=OAUTH-TOKEN
 
 This should only be used in server to server scenarios. Don't leak your authentification token to your users.
 
-### Supported Chatbot platforms
-
-There are a few predefined chatbot platforms in the system:
-- Messenger = 1,
-- Telegram = 2,
-- Kik = 3, coming soon
-- Slack = 4, coming soon
-
-If you're using any other platform please [let us know](mailto:agamanuk@gmail.com).
-
 ## Updates API
-- To use updates API you need to know ChatBottle Bot Id. You can find it at the developers dashboard.
+- To use the **Updates API** you need to know your ChatBottle Bot Id. You can find it at the developers dashboard.
 - Authorization token must be included in requests. Pass the token as `Authorization` header or query `token` parameter.
 
 
