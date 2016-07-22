@@ -126,7 +126,7 @@ Authorization: 79bc1e9c1e152ddccace522b96649c6adea398b6
 }
 ```
 
-Note: ChatBottle accepts any Facebook Messenger structured message. Just forward everything you send or receive from Facebook.
+Note: _ChatBottle accepts any Facebook Messenger structured message. Just forward everything you send or receive from Facebook._
 
 #### Full request example(copy, paste and execute it)
 ```
