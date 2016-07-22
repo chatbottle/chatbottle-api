@@ -75,7 +75,7 @@ There are three ways to authenticate through ChatBottle API:
 curl -H "Authorization: OAUTH-TOKEN" https://api.chatbottle.co
 
 ```
-
+or
 #### 2. Send an authorization token as a token parameter
 ```
 curl https://api.chatbottle.co/?token=OAUTH-TOKEN
@@ -83,16 +83,106 @@ curl https://api.chatbottle.co/?token=OAUTH-TOKEN
 
 This should only be used in server to server scenarios. Don't leak your authentification token to your users.
 
-## Updates API
-- To use the **Updates API** you need to know your ChatBottle Bot Id. You can find it at the developers dashboard.
-- Authorization token must be included in requests. Pass the token as `Authorization` header or query `token` parameter.
+## Messages API
+- To use the **Messages API** you need to know your **ChatBottle Bot Id** and **ChatBottle authorization token**. You can find it at the developers dashboard.
+- Pass your authorization token as `Authorization` header or query `token` parameter.
 
+### Facebook Messenger
+Make a `POST` request to `https://api.chatbottle.co/updates/messenger/{bot-id}/` with your ChatBottle Bot ID and Authorization token. 
 
-### Send an update  
-`POST https://api.chatbottle.co/v1/updates/{bot-id}/`
+#### Incoming messages
+Make sure to set the 'Content-Type' header to 'application/json'
+`POST https://api.chatbottle.co/v1/updates/messenger/**{bot-id}**/?direction=**in**&token=**{your token}**`
 
-Post a message or any other update to ChatBottle.
-Make a `POST` request to `https://api.chatbottle.co/updates/{bot-id}/` with your ChatBottle Bot ID and Authorization token. In the body of the request, you must have the following data in a JSON format:
+Request body
+```
+POST http://dev.api.chatbottle.co/v1/updates/messenger/573eb74ff210400438505235/?direction=in HTTP/1.1
+Content-Type: application/json
+Host: dev.api.chatbottle.co
+Content-Length: 484
+Authorization: 79bc1e9c1e152ddccace522b96649c6adea398b6
+
+{
+  "object": "page",
+  "entry": [
+    {
+      "id": "1604391129817458",
+      "time": 1469201060128,
+      "messaging": [
+        {
+          "recipient": {
+            "id": "1604391129817458"
+          },
+          "sender": {
+            "id": "802455339884571"
+          },
+          "message": {
+            "mid": "mid.1469201060037:8d651aa4d006895998",
+            "text": "hello, bot!",
+            "seq": 5466
+          }
+        }
+      ]
+    }
+  ]
+}
+```
+#### Outgoing messages
+
+`POST https://api.chatbottle.co/v1/updates/messenger/**{bot-id}**/?direction=**out**&token=**{your token}**`
+Request body
+```
+{
+  "recipient": {
+    "id": "1604391129817458"
+  },
+  "message": {
+    "text": "hello, user!"
+  }
+}
+```
+
+Note: ChatBottle accepts any Facebook Messenger structured message. Just forward everything you send or receive from Facebook.
+
+#### Full request example(copy, paste and execute it)
+```
+POST https://api.chatbottle.co/v1/updates/573eb74ff210400438505235/ HTTP/1.1
+Content-Type: application/json
+Host: api.chatbottle.co
+Content-Length: 250
+Authorization: 79bc1e9c1e152ddccace522b96649c6adea398b6
+
+{
+  "Messaging": [
+    {
+      "Id": "712329970",
+      "Text": "Hello world!",
+      "UserId": "1646261728",      
+      "Direction": "Out" 
+    }    
+  ]
+}
+```
+
+------
+### Telegram 
+
+Make a `POST` request to `https://api.chatbottle.co/updates/{bot-id}/` with your ChatBottle Bot ID and Authorization token. Make sure to set the 'Content-Type' header to 'application/json'.
+
+`POST https://api.chatbottle.co/v1/updates/**{bot-id}**/?token=**{your token}**`
+Request body
+```
+{
+  "Messaging": [
+    {
+      "Id": "712329970",
+      "Text": "Hello world!",
+      "UserId": "1646261728",      
+      "Direction": "Out" 
+    }    
+  ]
+}
+```
 
 ### Parameters 
 |    Parameter     | Optional?                    | Description         |
@@ -104,7 +194,7 @@ Make a `POST` request to `https://api.chatbottle.co/updates/{bot-id}/` with your
 | Messaging.Direction | no 						  | **In** for incoming and **Out** for outgoing messages|
 
 
-#### Full request
+#### Full request example(copy, paste and execute it)
 ```
 POST https://api.chatbottle.co/v1/updates/573eb74ff210400438505235/ HTTP/1.1
 Content-Type: application/json
