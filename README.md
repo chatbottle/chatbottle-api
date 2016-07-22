@@ -68,25 +68,16 @@ curl -v https://api.chatbottle.co/v1/updates/[chatbottle bot id] \
 ### Schema
 All API access is over HTTPS, and accessed from the `https://api.chatbottle.co`. All data is sent and received as JSON.
 
-### Root Endpoint
-You can issue a GET request to the root endpoint to get all the endpoint categories that the API supports:
-```
-curl https://api.chatbottle.co
-```
-### Client Errors
-There are three possible types of client errors on API calls that receive request bodies:
-- Sending invalid JSON will result in a 400 Bad Request response.
-
-
 ### Authentication
-There are three ways to authenticate through ChatBottle API. Requests that require authentication will return `403 Forbidden` and `401 Unauthorized.`
-#### HMAC Authentication(sent in a header)
+There are three ways to authenticate through ChatBottle API:
+
+#### 1. Send authorization token as HTTP Authorization header
 ```
 curl -H "Authorization: OAUTH-TOKEN" https://api.chatbottle.co
 
 ```
 
-#### HMAC Authentication (sent as a parameter)
+#### 2. Send authorization token as token parameter
 ```
 curl https://api.chatbottle.co/?token=OAUTH-TOKEN
 ```
