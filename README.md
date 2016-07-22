@@ -113,7 +113,7 @@ Authorization: 79bc1e9c1e152ddccace522b96649c6adea398b6
 #### Outgoing messages
 
 `POST https://api.chatbottle.co/v1/updates/messenger/**{bot-id}**/?direction=**out**&token=**{your token}**`
-#### Full request example(copy, paste and execute it)
+**Request body**
 ```
 {
   "recipient": {
