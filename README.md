@@ -8,7 +8,7 @@
 1. Who can help me build an integration?
 
 ### What is ChatBottle?
-[ChatBottle](https://chatbottle.co/?ref=github) is a tool to discover the best chatbots. It's like App Store or Google, but for chatbots.
+[ChatBottle](https://chatbottle.co/?ref=github) is a tool to discover the best chatbots. It's like Google for chatbots.
 
 You probably know thousands of developers are working on bots right now. In a few months, the market will be crowded and it will be much more difficult to find a chatbot. ChatBottle is one more channel to drive traffic to your bot. Integrate your bots with the API to join the club.
 Whenever a bot receives or sends a message ChatBottle is notified. It allows to gather the data and measure how people actually use the bot. 
@@ -26,7 +26,7 @@ Integrating with ChatBottle is easy and should take a developer about a few minu
 
 ChatBottle is one more customer acquisition channel to drive traffic to your bot. Integration with ChatBottle allows to get news users and  return existing ones.
 
-Promoting a chatbot with ChatBottle is cheaper than advertising, content marketing or SEO. Once the bot is integrated it will be automatically ranked and listed in ChatBottle BotStore.
+Promoting a chatbot with ChatBottle is cheaper than advertising, content marketing or SEO. Once the bot is integrated it will be automatically ranked and listed in ChatBottle Search.
 
 ### How it works?
 Your bot forwards every message it sent or received to ChatBottle API. The messages are analyzed by our ranking algorithms and the bot is ranked. 
@@ -34,7 +34,6 @@ ChatBottle bot rank works similar to Google PageRank. It’s important how peopl
 
 ChatBottle ranks bots based on retention and other metrics. Having not many but addicted users is a good sign for ChatBottle algorithms. As a result, your bot is ranked higher and more people discover it.
 
-It’s important to integrate with ChatBottle as early as possible. Even before the official launch of a bot. ChatBottle algorithms need some data to properly measure and rank your bot. We recommend starting using the API at least a week before actual public launch.
 
 ### Who can help me?
 If you have questions, you can always [email](mailto:agamanuk@gmail.com) or skype us(gamanuk_alexander)! If you found a bug feel free to [create an issue](https://github.com/chatbottle/chatbottle-api/issues). 
