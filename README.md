@@ -6,6 +6,7 @@
 1. What is the Developer Platform?
 1. Why to integrate my bot into ChatBottle?
 1. Who can help me build an integration?
+1. Examples
 
 ### What is ChatBottle?
 [ChatBottle](https://chatbottle.co/?ref=github) is a tool to discover the best chatbots. It's like Google for chatbots.
@@ -70,7 +71,51 @@ This should only be used in server to server scenarios. Don't leak your authenti
 - To use the **Messages API** you need to know your **ChatBottle Bot Id** and **ChatBottle authorization token**. You can find it at the developers dashboard.
 - Pass your authorization token as `Authorization` header or query `token` parameter.
 
-### Facebook Messenger
+### Facebook Messenger 
+
+#### Node.js via NPM
+
+##### Install NPM
+ChatBottle is avialable via NPM
+`
+npm install --save chatbottle
+`
+
+##### Include chatbottle
+```
+var chatbottle = require('./chatbottle')(process.env.CHATBOTTLE_API_TOKEN, process.env.CHATBOTTLE_BOTID).facebook;
+```
+
+##### Log whenever your webhook is called
+```
+app.post(webHookPath, function (req, res) {
+**    chatbottle.logIncoming(req.body);**
+    const messagingEvents = req.body.entry[0].messaging;
+    if (messagingEvents.length && messagingEvents[0].message && messagingEvents[0].message.text) {
+        const event = req.body.entry[0].messaging[0];
+        const sender = event.sender.id;
+        const text = event.message.text;
+        const requestData = {
+            url: 'https://graph.facebook.com/v2.6/me/messages',
+            qs: { access_token: process.env.FACEBOOK_PAGE_TOKEN },
+            method: 'POST',
+            json: {
+                recipient: { id: sender },
+                message: {
+                    text: 'ECHO: ' + text
+                }
+            }
+        };
+     **   const requestId = chatbottle.logOutgoing(requestData.json);**
+        request(requestData);
+    }
+    res.sendStatus(200);
+});
+```
+-------
+
+### HTTP REST for Messenger
+
 Make a `POST` request to `https://api.chatbottle.co/updates/messenger/{bot-id}/` with your ChatBottle Bot ID and Authorization token. 
 
 #### Incoming messages
