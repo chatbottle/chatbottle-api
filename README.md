@@ -114,8 +114,14 @@ Authorization: 79bc1e9c1e152ddccace522b96649c6adea398b6
 
 `POST https://api.chatbottle.co/v1/updates/messenger/**{bot-id}**/?direction=**out**&token=**{your token}**`
 
-**Request body**
+#### Full request example(copy, paste and execute it)
 ```
+POST http://dev.api.chatbottle.co/v1/updates/messenger/573eb74ff210400438505235/?direction=out HTTP/1.1
+Content-Type: application/json
+Host: dev.api.chatbottle.co
+Content-Length: 107
+Authorization: 79bc1e9c1e152ddccace522b96649c6adea398b6
+
 {
   "recipient": {
     "id": "1604391129817458"
