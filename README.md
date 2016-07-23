@@ -75,18 +75,18 @@ This should only be used in server to server scenarios. Don't leak your authenti
 
 #### Node.js via NPM
 
-##### Install NPM
+#### Install NPM
 ChatBottle is avialable via NPM
 `
 npm install --save chatbottle
 `
 
-##### Include chatbottle
+#### Include chatbottle
 ```
 var chatbottle = require('./chatbottle')(process.env.CHATBOTTLE_API_TOKEN, process.env.CHATBOTTLE_BOTID).facebook;
 ```
 
-##### Log whenever your webhook is called
+#### Log whenever your webhook is called
 ```
 app.post(webHookPath, function (req, res) {
     chatbottle.logIncoming(req.body);
