@@ -115,6 +115,7 @@ app.post(webHookPath, function (req, res) {
 ```
 
 _For complete example see: https://github.com/chatbottle/chatbottle-api-nodejs/blob/master/src/facebook-example.js_
+
 -------
 
 ### HTTP REST for Messenger
