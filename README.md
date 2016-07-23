@@ -89,7 +89,7 @@ var chatbottle = require('./chatbottle')(process.env.CHATBOTTLE_API_TOKEN, proce
 ##### Log whenever your webhook is called
 ```
 app.post(webHookPath, function (req, res) {
-**    chatbottle.logIncoming(req.body);**
+    chatbottle.logIncoming(req.body);
     const messagingEvents = req.body.entry[0].messaging;
     if (messagingEvents.length && messagingEvents[0].message && messagingEvents[0].message.text) {
         const event = req.body.entry[0].messaging[0];
@@ -106,7 +106,7 @@ app.post(webHookPath, function (req, res) {
                 }
             }
         };
-     **   const requestId = chatbottle.logOutgoing(requestData.json);**
+        const requestId = chatbottle.logOutgoing(requestData.json);
         request(requestData);
     }
     res.sendStatus(200);
@@ -120,7 +120,7 @@ Make a `POST` request to `https://api.chatbottle.co/updates/messenger/{bot-id}/`
 
 #### Incoming messages
 Make sure to set the 'Content-Type' header to 'application/json'
-`POST https://api.chatbottle.co/v1/updates/messenger/**{bot-id}**/?direction=**in**&token=**{your token}**`
+`POST https://api.chatbottle.co/v1/updates/messenger/{bot-id}/?direction=in&token={your token}`
 
 #### Full INCOMING request example(copy, paste and execute it)
 ```
@@ -157,7 +157,7 @@ Authorization: 79bc1e9c1e152ddccace522b96649c6adea398b6
 ```
 #### Outgoing messages
 
-`POST https://api.chatbottle.co/v1/updates/messenger/**{bot-id}**/?direction=**out**&token=**{your token}**`
+`POST https://api.chatbottle.co/v1/updates/messenger/{bot-id}/?direction=out&token={your token}`
 
 #### Full OUTGOING request example(copy, paste and execute it)
 ```
@@ -184,7 +184,7 @@ Note: _ChatBottle accepts any Facebook Messenger structured message. Just forwar
 
 Make a `POST` request to `https://api.chatbottle.co/updates/{bot-id}/` with your ChatBottle Bot ID and Authorization token. Make sure to set the 'Content-Type' header to 'application/json'.
 
-`POST https://api.chatbottle.co/v1/updates/**{bot-id}**/?token=**{your token}**`
+`POST https://api.chatbottle.co/v1/updates/{bot-id}/?token={your token}`
 Request body
 ```
 {
