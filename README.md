@@ -77,6 +77,7 @@ This should only be used in server to server scenarios. Don't leak your authenti
 
 #### Install NPM
 ChatBottle is avialable via NPM
+
 `
 npm install --save chatbottle
 `
