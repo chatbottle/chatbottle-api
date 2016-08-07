@@ -128,9 +128,9 @@ Make sure to set the 'Content-Type' header to 'application/json'
 
 #### Full INCOMING request example(copy, paste and execute it)
 ```
-POST http://dev.api.chatbottle.co/v1/updates/messenger/573eb74ff210400438505235/?direction=in HTTP/1.1
+POST http://api.chatbottle.co/v1/updates/messenger/573eb74ff210400438505235/?direction=in HTTP/1.1
 Content-Type: application/json
-Host: dev.api.chatbottle.co
+Host: api.chatbottle.co
 Content-Length: 484
 Authorization: 79bc1e9c1e152ddccace522b96649c6adea398b6
 
@@ -165,9 +165,9 @@ Authorization: 79bc1e9c1e152ddccace522b96649c6adea398b6
 
 #### Full OUTGOING request example(copy, paste and execute it)
 ```
-POST http://dev.api.chatbottle.co/v1/updates/messenger/573eb74ff210400438505235/?direction=out HTTP/1.1
+POST http://api.chatbottle.co/v1/updates/messenger/573eb74ff210400438505235/?direction=out HTTP/1.1
 Content-Type: application/json
-Host: dev.api.chatbottle.co
+Host: api.chatbottle.co
 Content-Length: 107
 Authorization: 79bc1e9c1e152ddccace522b96649c6adea398b6
 
