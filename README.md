@@ -184,7 +184,7 @@ Authorization: 79bc1e9c1e152ddccace522b96649c6adea398b6
 Note: _ChatBottle accepts any Facebook Messenger structured message. Just forward everything you send or receive from Facebook._
 
 ------
-### Telegram 
+### Generic (Messenger, Telegram, Slack, etc) 
 
 Make a `POST` request to `https://api.chatbottle.co/updates/{bot-id}/` with your ChatBottle Bot ID and Authorization token. Make sure to set the 'Content-Type' header to 'application/json'.
 
