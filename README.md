@@ -222,7 +222,7 @@ Authorization: 79bc1e9c1e152ddccace522b96649c6adea398b6
 }
 ```
 #### Outgoing messages
-
+Forward to us message object from the response your get after executing [sendMessage](https://telegram-bot-sdk.readme.io/docs/sendmessage) or any other `send` method.
 `POST https://api.chatbottle.co/v1/updates/messenger/{bot-id}/?direction=out&token={your token}`
 
 #### Full OUTGOING request example(copy, paste and execute it)
