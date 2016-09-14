@@ -73,7 +73,7 @@ This should only be used in server to server scenarios. Don't leak your authenti
 - To use the **Messages API** you need to know your **ChatBottle Bot Id** and **ChatBottle authorization token**. You can find it at the developers dashboard.
 - Pass your authorization token as `Authorization` header or query `token` parameter.
 
-### Facebook Messenger 
+### Node.js ChatBottle client for Facebook Messenger 
 
 #### Node.js via NPM
 
