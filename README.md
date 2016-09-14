@@ -7,6 +7,7 @@
 1. Why to integrate my bot into ChatBottle?
 1. Who can help me build an integration?
 1. Examples
+- [ChatBottle Node.js client](https://github.com/chatbottle/chatbottle-api#facebook-messenger) for Facebook Messenger
 
 ### What is ChatBottle?
 [ChatBottle](https://chatbottle.co/?ref=github) is a tool to discover the best chatbots. It's like Google for chatbots.
