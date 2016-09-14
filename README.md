@@ -183,6 +183,77 @@ Authorization: 79bc1e9c1e152ddccace522b96649c6adea398b6
 
 Note: _ChatBottle accepts any Facebook Messenger structured message. Just forward everything you send or receive from Facebook._
 
+### HTTP REST for Telegram
+
+Make a `POST` request to `https://api.chatbottle.co/updates/telegram/{bot-id}/` with your ChatBottle Bot ID and Authorization token. 
+
+#### Incoming messages
+Make sure to set the 'Content-Type' header to 'application/json'
+`POST https://api.chatbottle.co/v1/updates/telegram/{bot-id}/?direction=in&token={your token}`
+
+#### Full INCOMING request example(copy, paste and execute it)
+```
+POST https://api.chatbottle.co/v1/updates/telegram/57776333525d5d063447b048/?direction=in HTTP/1.1
+Content-Type: application/json
+Host: api.chatbottle.co
+Content-Length: 413
+Authorization: 79bc1e9c1e152ddccace522b96649c6adea398b6
+
+{
+  "update_id": 123456789,
+  "message": {
+    "message_id": 1,
+    "from": {
+      "id": 1234567890,
+      "first_name": "John",
+      "last_name": "Doe",
+      "username": "JohnDoe"
+    },
+    "chat": {
+      "id": 1234567890,
+      "first_name": "John",
+      "last_name": "Doe",
+      "username": "JohnDoe",
+      "type": "private"
+    },
+    "date": 1459957719,
+    "text": "/start"
+  }
+}
+```
+#### Outgoing messages
+
+`POST https://api.chatbottle.co/v1/updates/messenger/{bot-id}/?direction=out&token={your token}`
+
+#### Full OUTGOING request example(copy, paste and execute it)
+```
+POST https://api.chatbottle.co/v1/updates/telegram/57776333525d5d063447b048/?direction=out HTTP/1.1
+Content-Type: application/json
+Host: api.chatbottle.co
+Content-Length: 107
+Authorization: 79bc1e9c1e152ddccace522b96649c6adea398b6
+
+{
+  "message_id": 1,
+  "from": {
+    "id": 234503788,
+    "first_name": "YourBot",
+    "username": "YourBot"
+  },
+  "chat": {
+    "id": 1234567890,
+    "first_name": "John",
+    "last_name": "Doe",
+    "username": "JohnDoe",
+    "type": "private"
+  },
+  "date": 1459958199,
+  "text": "Hello from Bot!"
+}
+```
+
+Note: _ChatBottle accepts any Telegram structured message. Just forward everything you send or receive from Telegram._
+
 ------
 ### Generic (Messenger, Telegram, Slack, etc) 
 
