@@ -6,7 +6,6 @@
 1. What is the Developer Platform?
 1. Why to integrate my bot into ChatBottle?
 1. Who can help me build an integration?
-1. Examples
 1. [ChatBottle Node.js client](https://github.com/chatbottle/chatbottle-api#nodejs-via-npm) for Facebook Messenger
 1. [ChatBottle REST API for Facebook Messenger](https://github.com/chatbottle/chatbottle-api#http-rest-for-messenger)
 1. [ChatBottle REST API for Telegram](https://github.com/chatbottle/chatbottle-api#http-rest-for-telegram)
