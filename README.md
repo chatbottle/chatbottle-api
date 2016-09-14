@@ -191,7 +191,7 @@ Make a `POST` request to `https://api.chatbottle.co/updates/telegram/{bot-id}/` 
 
 `POST https://api.chatbottle.co/v1/updates/telegram/{bot-id}/?direction=in&token={your token}`
 
-ChatBottle expects [Update](https://core.telegram.org/bots/api#update) object as a body JSON.
+ChatBottle expects an [Update](https://core.telegram.org/bots/api#update) object as a body JSON.
 Just send it to ChatBottle when receive an update from Telegram.
 
 
@@ -228,7 +228,7 @@ Authorization: 79bc1e9c1e152ddccace522b96649c6adea398b6
 #### Outgoing messages
 `POST https://api.chatbottle.co/v1/updates/messenger/{bot-id}/?direction=out&token={your token}`
 
-ChatBottle expects [Message](https://core.telegram.org/bots/api#message) object as a body JSON.
+ChatBottle expects a [Message](https://core.telegram.org/bots/api#message) object as a body JSON.
 Send to us the response message object after executing [sendMessage](https://telegram-bot-sdk.readme.io/docs/sendmessage) or any other `send` method.
 
 
