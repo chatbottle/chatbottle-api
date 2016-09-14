@@ -7,9 +7,10 @@
 1. Why to integrate my bot into ChatBottle?
 1. Who can help me build an integration?
 1. Examples
-- [ChatBottle Node.js client](https://github.com/chatbottle/chatbottle-api#nodejs-via-npm) for Facebook Messenger
-- [ChatBottle REST API for Facebook Messenger](https://github.com/chatbottle/chatbottle-api#http-rest-for-messenger)
--[ChatBottle REST API for Telegram](https://github.com/chatbottle/chatbottle-api#http-rest-for-telegram)
+1. [ChatBottle Node.js client](https://github.com/chatbottle/chatbottle-api#nodejs-via-npm) for Facebook Messenger
+1. [ChatBottle REST API for Facebook Messenger](https://github.com/chatbottle/chatbottle-api#http-rest-for-messenger)
+1. [ChatBottle REST API for Telegram](https://github.com/chatbottle/chatbottle-api#http-rest-for-telegram)
+1. [ChatBottle Generic REST API](https://github.com/chatbottle/chatbottle-api#generic-messenger-telegram-slack-etc) (Messenger, Slack, Kik, Telegram Skype)
 
 ### What is ChatBottle?
 [ChatBottle](https://chatbottle.co/?ref=github) is a tool to discover the best chatbots. It's like Google for chatbots.
