@@ -8,7 +8,7 @@
 1. Who can help me build an integration?
 1. Examples
 - [ChatBottle Node.js client](https://github.com/chatbottle/chatbottle-api#nodejs-via-npm) for Facebook Messenger
-- 
+- [ChatBottle REST API for Facebook Messenger](https://github.com/chatbottle/chatbottle-api#http-rest-for-messenger)
 
 ### What is ChatBottle?
 [ChatBottle](https://chatbottle.co/?ref=github) is a tool to discover the best chatbots. It's like Google for chatbots.
