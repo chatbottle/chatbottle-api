@@ -247,7 +247,7 @@ Note: _ChatBottle accepts any Telegram structured message. Just forward everythi
 ------
 ### Generic (Messenger, Telegram, Slack, etc) 
 
-Make a `POST` request to `https://api.chatbottle.co/v2/updates/{token}/` with your ChatBottle Bot ID and Authorization token. Make sure to set the 'Content-Type' header to 'application/json'.
+Make a `POST` request to `https://api.chatbottle.co/v2/updates/{token}/` with your ChatBottle bot's unique authorization token. Make sure to set the 'Content-Type' header to 'application/json'.
 
 `POST https://api.chatbottle.co/v2/updates/{token}/`
 Request body
