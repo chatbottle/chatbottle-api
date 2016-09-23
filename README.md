@@ -47,7 +47,7 @@ This is a simplified walkthrough to see the platform in action. Read the [API Gu
 
 1. Register at [chatbottle.co](https://chatbottle.co);
 2. Register an existing chat bost at the dashboard;
-3. Every time your bots send or receive a message call ChatBottle API. Use generated **Authorization token** and **ChatBottle Bot Id** to make calls.
+3. Every time your bots send or receive a message call ChatBottle API. Use bot's unique generated **Authorization token** to make calls.
 
 ## API
 
@@ -56,8 +56,7 @@ All API access is over HTTPS, and accessed from the `https://api.chatbottle.co`.
 
 
 ## Messages API
-- To use the **Messages API** you need to know your **ChatBottle Bot Id** and **ChatBottle authorization token**. You can find it at the developers dashboard.
-- Pass your authorization token as `Authorization` header or query `token` parameter.
+- To use the **Messages API** you need to know your **ChatBottle bot's authorization token**. You can find it at the developers dashboard.
 
 ### Node.js ChatBottle client for Facebook Messenger 
 
