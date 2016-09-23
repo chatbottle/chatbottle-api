@@ -71,7 +71,7 @@ npm install --save chatbottle
 
 #### Include chatbottle
 ```
-var chatbottle = require('./chatbottle')(process.env.CHATBOTTLE_API_TOKEN, process.env.CHATBOTTLE_BOTID).facebook;
+var chatbottle = require('./chatbottle')(process.env.CHATBOTTLE_API_TOKEN).facebook;
 ```
 
 #### Log whenever your webhook is called
