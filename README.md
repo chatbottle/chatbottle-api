@@ -54,21 +54,6 @@ This is a simplified walkthrough to see the platform in action. Read the [API Gu
 ### Schema
 All API access is over HTTPS, and accessed from the `https://api.chatbottle.co`. All data is sent and received as JSON.
 
-### Authentication
-There are three ways to authenticate through ChatBottle API:
-
-#### 1. Send an authorization token as a HTTP Authorization header
-```
-curl -H "Authorization: OAUTH-TOKEN" https://api.chatbottle.co
-
-```
-or
-#### 2. Send an authorization token as a token parameter
-```
-curl https://api.chatbottle.co/?token=OAUTH-TOKEN
-```
-
-This should only be used in server to server scenarios. Don't leak your authentification token to your users.
 
 ## Messages API
 - To use the **Messages API** you need to know your **ChatBottle Bot Id** and **ChatBottle authorization token**. You can find it at the developers dashboard.
@@ -123,19 +108,18 @@ _For complete example see: https://github.com/chatbottle/chatbottle-api-nodejs/b
 
 ### HTTP REST for Messenger
 
-Make a `POST` request to `https://api.chatbottle.co/updates/messenger/{bot-id}/` with your ChatBottle Bot ID and Authorization token. Make sure to set the 'Content-Type' header to 'application/json'.
+Make a `POST` request to `https://api.chatbottle.co/updates/messenger/{token}/` with your ChatBottle Bot Authorization token. Make sure to set the 'Content-Type' header to 'application/json'.
 
 #### Incoming messages
 
-`POST https://api.chatbottle.co/v1/updates/messenger/{bot-id}/?direction=in&token={your token}`
+`POST https://api.chatbottle.co/v2/updates/messenger/{chatbottle bot's token}/?direction=in`
 
 #### Full INCOMING request example(copy, paste and execute it)
 ```
-POST https://api.chatbottle.co/v1/updates/messenger/573eb74ff210400438505235/?direction=in HTTP/1.1
+POST https://api.chatbottle.co/v2/updates/messenger/9eb21ef4607778142802f597b3b44a3c383847ae/?direction=in HTTP/1.1
 Content-Type: application/json
 Host: api.chatbottle.co
 Content-Length: 484
-Authorization: 79bc1e9c1e152ddccace522b96649c6adea398b6
 
 {
   "object": "page",
@@ -164,15 +148,14 @@ Authorization: 79bc1e9c1e152ddccace522b96649c6adea398b6
 ```
 #### Outgoing messages
 
-`POST https://api.chatbottle.co/v1/updates/messenger/{bot-id}/?direction=out&token={your token}`
+`POST https://api.chatbottle.co/v2/updates/messenger/{chatbottle token}/?direction=out&token={your token}`
 
 #### Full OUTGOING request example(copy, paste and execute it)
 ```
-POST https://api.chatbottle.co/v1/updates/messenger/573eb74ff210400438505235/?direction=out HTTP/1.1
+POST https://api.chatbottle.co/v2/updates/messenger/9eb21ef4607778142802f597b3b44a3c383847ae/?direction=out HTTP/1.1
 Content-Type: application/json
 Host: api.chatbottle.co
 Content-Length: 107
-Authorization: 79bc1e9c1e152ddccace522b96649c6adea398b6
 
 {
   "recipient": {
@@ -188,11 +171,11 @@ Note: _ChatBottle accepts any Facebook Messenger structured message. Just forwar
 
 ### HTTP REST for Telegram
 
-Make a `POST` request to `https://api.chatbottle.co/updates/telegram/{bot-id}/` with your ChatBottle Bot ID and Authorization token. Make sure to set the 'Content-Type' header to 'application/json'.
+Make a `POST` request to `https://api.chatbottle.co/updates/telegram/{token}/` with your ChatBottle Bot Authorization token. Make sure to set the 'Content-Type' header to 'application/json'.
 
 #### Incoming messages
 
-`POST https://api.chatbottle.co/v1/updates/telegram/{bot-id}/?direction=in&token={your token}`
+`POST https://api.chatbottle.co/v2/updates/telegram/{token}/?direction=in`
 
 ChatBottle expects an [Update](https://core.telegram.org/bots/api#update) object as a body JSON.
 Just send it to ChatBottle when receive an update from Telegram.
@@ -200,11 +183,10 @@ Just send it to ChatBottle when receive an update from Telegram.
 
 #### Full INCOMING request example(copy, paste and execute it)
 ```
-POST https://api.chatbottle.co/v1/updates/telegram/57776333525d5d063447b048/?direction=in HTTP/1.1
+POST https://api.chatbottle.co/v2/updates/telegram/79bc1e9c1e152ddccace522b96649c6adea398b6/?direction=in HTTP/1.1
 Content-Type: application/json
 Host: api.chatbottle.co
 Content-Length: 413
-Authorization: 79bc1e9c1e152ddccace522b96649c6adea398b6
 
 {
   "update_id": 123456789,
@@ -229,7 +211,7 @@ Authorization: 79bc1e9c1e152ddccace522b96649c6adea398b6
 }
 ```
 #### Outgoing messages
-`POST https://api.chatbottle.co/v1/updates/messenger/{bot-id}/?direction=out&token={your token}`
+`POST https://api.chatbottle.co/v2/updates/messenger/{token}/?direction=out`
 
 ChatBottle expects a [Message](https://core.telegram.org/bots/api#message) object as a body JSON.
 Send to us the response message object after executing [sendMessage](https://telegram-bot-sdk.readme.io/docs/sendmessage) or any other `send` method.
@@ -237,11 +219,10 @@ Send to us the response message object after executing [sendMessage](https://tel
 
 #### Full OUTGOING request example(copy, paste and execute it)
 ```
-POST https://api.chatbottle.co/v1/updates/telegram/57776333525d5d063447b048/?direction=out HTTP/1.1
+POST https://api.chatbottle.co/v2/updates/telegram/79bc1e9c1e152ddccace522b96649c6adea398b6/?direction=out HTTP/1.1
 Content-Type: application/json
 Host: api.chatbottle.co
 Content-Length: 107
-Authorization: 79bc1e9c1e152ddccace522b96649c6adea398b6
 
 {
   "message_id": 1,
@@ -267,9 +248,9 @@ Note: _ChatBottle accepts any Telegram structured message. Just forward everythi
 ------
 ### Generic (Messenger, Telegram, Slack, etc) 
 
-Make a `POST` request to `https://api.chatbottle.co/updates/{bot-id}/` with your ChatBottle Bot ID and Authorization token. Make sure to set the 'Content-Type' header to 'application/json'.
+Make a `POST` request to `https://api.chatbottle.co/updates/{token}/` with your ChatBottle Bot ID and Authorization token. Make sure to set the 'Content-Type' header to 'application/json'.
 
-`POST https://api.chatbottle.co/v1/updates/{bot-id}/?token={your token}`
+`POST https://api.chatbottle.co/v2/updates/{token}/`
 Request body
 ```
 {
@@ -296,11 +277,10 @@ Request body
 
 #### Full request example(copy, paste and execute it)
 ```
-POST https://api.chatbottle.co/v1/updates/573eb74ff210400438505235/ HTTP/1.1
+POST https://api.chatbottle.co/v2/updates/9eb21ef4607778142802f597b3b44a3c383847ae/ HTTP/1.1
 Content-Type: application/json
 Host: api.chatbottle.co
 Content-Length: 250
-Authorization: 79bc1e9c1e152ddccace522b96649c6adea398b6
 
 {
   "Messaging": [
