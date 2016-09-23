@@ -108,7 +108,7 @@ _For complete example see: https://github.com/chatbottle/chatbottle-api-nodejs/b
 
 ### HTTP REST for Messenger
 
-Make a `POST` request to `https://api.chatbottle.co/updates/messenger/{token}/` with your ChatBottle Bot Authorization token. Make sure to set the 'Content-Type' header to 'application/json'.
+Make a `POST` request to `https://api.chatbottle.co/v2/updates/messenger/{token}/` with your ChatBottle Bot Authorization token. Make sure to set the 'Content-Type' header to 'application/json'.
 
 #### Incoming messages
 
@@ -171,7 +171,7 @@ Note: _ChatBottle accepts any Facebook Messenger structured message. Just forwar
 
 ### HTTP REST for Telegram
 
-Make a `POST` request to `https://api.chatbottle.co/updates/telegram/{token}/` with your ChatBottle Bot Authorization token. Make sure to set the 'Content-Type' header to 'application/json'.
+Make a `POST` request to `https://api.chatbottle.co/v2/updates/telegram/{token}/` with your ChatBottle Bot Authorization token. Make sure to set the 'Content-Type' header to 'application/json'.
 
 #### Incoming messages
 
