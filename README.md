@@ -35,12 +35,12 @@ All API access is over HTTPS, and accessed from the `https://api.chatbottle.co`.
 ChatBottle is avialable via NPM
 
 `
-npm install --save chatbottle
+npm install --save chatbottle-api-nodejs
 `
 
 #### Include chatbottle
 ```
-var chatbottle = require('./chatbottle')(process.env.CHATBOTTLE_API_TOKEN).facebook;
+var chatbottle = require('./chatbottle-api-nodejs')(process.env.CHATBOTTLE_API_TOKEN).facebook;
 ```
 
 #### Log whenever your webhook is called
