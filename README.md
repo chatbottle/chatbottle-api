@@ -2,51 +2,20 @@
 
 ## Overview
 
-1. What is ChatBottle?
-1. What is the Developer Platform?
-1. Why to integrate my bot into ChatBottle?
 1. Who can help me build an integration?
 1. [ChatBottle Node.js client](https://github.com/chatbottle/chatbottle-api#nodejs-via-npm) for Facebook Messenger
 1. [ChatBottle REST API for Facebook Messenger](https://github.com/chatbottle/chatbottle-api#http-rest-for-messenger)
 1. [ChatBottle REST API for Telegram](https://github.com/chatbottle/chatbottle-api#http-rest-for-telegram)
 1. [ChatBottle Generic REST API](https://github.com/chatbottle/chatbottle-api#generic-messenger-telegram-slack-etc) (Messenger, Slack, Kik, Telegram Skype)
 
-### What is ChatBottle?
-[ChatBottle](https://chatbottle.co/?ref=github) is a tool to discover the best chatbots. It's like Google for chatbots.
-
-You probably know thousands of developers are working on bots right now. In a few months, the market will be crowded and it will be much more difficult to find a chatbot. ChatBottle is one more channel to drive traffic to your bot. Integrate your bots with the API to join the club.
-Whenever a bot receives or sends a message ChatBottle is notified. It allows to gather the data and measure how people actually use the bot. 
-Based on the collected data ChatBottle ranks the bots.
-
-### What is the Developer Platform?
-The ChatBottle Developer Platform is a way for anyone to integrate their bot to ChatBottle. There are two main reasons for integrating:
-
-1. ChatBottle Search drives a high-quality audience to you bot.
-2. So that you can learn how your bots are used, review analytics and analyze conversations.
-
-Integrating with ChatBottle is easy and should take a developer about a few minutes. What you need to do is just to **forward every message your bot sent and received to ChatBottle REST API**.  
-
-### Why to integrate with ChatBottle?
-
-ChatBottle is one more customer acquisition channel to drive traffic to your bot. Integration with ChatBottle allows to get news users and reactivate existing ones.
-
-Promoting a chatbot with ChatBottle is cheaper than advertising, content marketing or SEO. Once the bot is integrated it will be automatically ranked and listed in ChatBottle Search.
-
-### How it works?
-Your bot forwards every message it sent or received to the ChatBottle API. The messages are analyzed by our ranking algorithms and the bot is ranked. 
-ChatBottle bot rank works similar to Google PageRank. It’s important how people interact with a chatbot, how often and how helpful is the bot.
-
-ChatBottle ranks bots based on retention and other metrics. Having not many but addicted users is a good sign for ChatBottle algorithms. As a result, your bot is ranked higher and more people discover it.
-
-
 ### Who can help me?
 If you have questions, you can always [email](mailto:agamanuk@gmail.com) or skype us(gamanuk_alexander)! If you found a bug feel free to [create an issue](https://github.com/chatbottle/chatbottle-api/issues). 
 
 ## Getting Started
-This is a simplified walkthrough to see the platform in action. Read the [API Guide](https://github.com/chatbottle/chatbottle-api#api) to learn about the features in more detail. Use curl to run the following code snippets.
+This is a simplified walkthrough to see the platform in action. Read the [API Guide](https://github.com/chatbottle/chatbottle-api#api) to learn about the features in more detail.
 
 1. Register at [chatbottle.co](https://chatbottle.co);
-2. Register an existing chat bost at the dashboard;
+2. Register a bot;
 3. Every time your bots send or receive a message call ChatBottle API. Use bot's unique generated **Authorization token** to make calls.
 
 ## API
@@ -111,11 +80,11 @@ Make a `POST` request to `https://api.chatbottle.co/v2/updates/messenger/{token}
 
 #### Incoming messages
 
-`POST https://api.chatbottle.co/v2/updates/messenger/{chatbottle bot's token}/?direction=in`
+`POST https://api.chatbottle.co/v2/updates/messenger/{chatbottle bot's token}/`
 
-#### Full INCOMING request example(copy, paste and execute it)
+#### Full INCOMING, ECHO, DELIVERY and READ request example(copy, paste and execute it)
 ```
-POST https://api.chatbottle.co/v2/updates/messenger/9eb21ef4607778142802f597b3b44a3c383847ae/?direction=in HTTP/1.1
+POST https://api.chatbottle.co/v2/updates/messenger/9eb21ef4607778142802f597b3b44a3c383847ae/ HTTP/1.1
 Content-Type: application/json
 Host: api.chatbottle.co
 Content-Length: 484
@@ -147,26 +116,7 @@ Content-Length: 484
 ```
 #### Outgoing messages
 
-`POST https://api.chatbottle.co/v2/updates/messenger/{chatbottle token}/?direction=out&token={your token}`
-
-#### Full OUTGOING request example(copy, paste and execute it)
-```
-POST https://api.chatbottle.co/v2/updates/messenger/9eb21ef4607778142802f597b3b44a3c383847ae/?direction=out HTTP/1.1
-Content-Type: application/json
-Host: api.chatbottle.co
-Content-Length: 107
-
-{
-  "recipient": {
-    "id": "1604391129817458"
-  },
-  "message": {
-    "text": "hello, user!"
-  }
-}
-```
-
-Note: _ChatBottle accepts any Facebook Messenger structured message. Just forward everything you send or receive from Facebook._
+Outgoing messages are tracked using Facebook Messenger Echo messages.
 
 ### HTTP REST for Telegram
 
