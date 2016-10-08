@@ -136,9 +136,8 @@ Content-Length: 484
   ]
 }
 ```
-#### Outgoing messages
 
-Outgoing messages are tracked using Facebook Messenger Echo messages.
+_NOTE: Outgoing messages are tracked using Facebook Messenger Echo messages._
 
 ### HTTP REST for Telegram
 
