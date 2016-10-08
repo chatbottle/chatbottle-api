@@ -78,9 +78,20 @@ _For complete example see: https://github.com/chatbottle/chatbottle-api-nodejs/b
 
 Make a `POST` request to `https://api.chatbottle.co/v2/updates/messenger/{token}/` with your ChatBottle Bot Authorization token. Make sure to set the 'Content-Type' header to 'application/json'.
 
-#### Incoming messages
+#### 1. Make sure the bot is subscribed to messages, message_echoes, message_deliveries and message_reads fields.
 
-`POST https://api.chatbottle.co/v2/updates/messenger/{chatbottle bot's token}/`
+Go to your bot's webhook settings and edit Page Subscription Fields. 
+Subscribe to messages, message_echoes, message_deliveries and message_reads fields
+
+- Go to https://developers.facebook.com/apps/
+- Click to the bot you're connecting
+- Open Webhooks tab.
+
+Note: Your bot can be subscribed to other fields as well. ChatBottle requires only messages, message_echoes, message_deliveries and message_reads fields.
+
+
+![]({{site.baseurl}}/http://photos.chatbottle.co/static/fb-subscription-fields.png)
+
 
 #### Full INCOMING, ECHO, DELIVERY and READ request example(copy, paste and execute it)
 ```
