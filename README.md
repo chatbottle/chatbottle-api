@@ -78,7 +78,7 @@ _For complete example see: https://github.com/chatbottle/chatbottle-api-nodejs/b
 
 Make a `POST` request to `https://api.chatbottle.co/v2/updates/messenger/{token}/` with your ChatBottle Bot Authorization token. Make sure to set the 'Content-Type' header to 'application/json'.
 
-#### 1. Make sure the bot is subscribed to messages, message_echoes, message_deliveries and message_reads fields.
+#### 1. Subscribe to messages, message_echoes, message_deliveries and message_reads fields.
 
 Go to your bot's webhook settings and edit Page Subscription Fields. 
 Subscribe to messages, message_echoes, message_deliveries and message_reads fields
