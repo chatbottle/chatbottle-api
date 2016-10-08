@@ -92,6 +92,16 @@ Note: Your bot can be subscribed to other fields as well. ChatBottle requires on
 
 ![Subscibe to Facebook Messenger fields and forward to ChatBottle](http://photos.chatbottle.co/static/fb-subscription-fields.png)
 
+### 2. Send message_echoes, message_deliveries, message_reads and incoming messages to ChatBottle API
+Send the json content of message_echoes, message_deliveries, message_reads and incoming messages received from Messenger to ChatBottle via the API. 
+Learn more: 
+https://developers.facebook.com/docs/messenger-platform/webhook-reference/message-echo 
+https://developers.facebook.com/docs/messenger-platform/webhook-reference/message-delivered 
+https://developers.facebook.com/docs/messenger-platform/webhook-reference/message-received 
+https://developers.facebook.com/docs/messenger-platform/webhook-reference/message-read
+
+The example bellow is for incoming messages. Do the same for echo, delivery and read messages as well. 
+Just forward to us everything you get from Facebook.
 
 #### Full INCOMING, ECHO, DELIVERY and READ request example(copy, paste and execute it)
 ```
