@@ -90,7 +90,7 @@ Subscribe to messages, message_echoes, message_deliveries and message_reads fiel
 Note: Your bot can be subscribed to other fields as well. ChatBottle requires only messages, message_echoes, message_deliveries and message_reads fields.
 
 
-![]({{site.baseurl}}/http://photos.chatbottle.co/static/fb-subscription-fields.png)
+![Subscibe to Facebook Messenger fields and forward to ChatBottle](http://photos.chatbottle.co/static/fb-subscription-fields.png)
 
 
 #### Full INCOMING, ECHO, DELIVERY and READ request example(copy, paste and execute it)
