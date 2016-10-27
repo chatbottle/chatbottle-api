@@ -282,6 +282,7 @@ GET http://api.chatbottle.co/v2/bots/264219e7d1c9276d0bead94e40eabe78c0ecd7ef/us
 ```
 
 Parameters
+
 | Name   | Type   | Description                                                                           |
 |--------|--------|---------------------------------------------------------------------------------------|
 | offset | number | The offset parameter defines the offset from the first result you want to fetch.      |
