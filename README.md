@@ -281,6 +281,12 @@ List all users the bot had conversations with.
 GET http://api.chatbottle.co/v2/bots/264219e7d1c9276d0bead94e40eabe78c0ecd7ef/users/ HTTP/1.1
 ```
 
+Parameters
+| Name   | Type   | Description                                                                           |
+|--------|--------|---------------------------------------------------------------------------------------|
+| offset | number | The offset parameter defines the offset from the first result you want to fetch.      |
+| size   | number | The size parameter allows you to configure the maximum amount of hits to be returned. |
+
 #### Response
 ```
 HTTP/1.1 200 OK
