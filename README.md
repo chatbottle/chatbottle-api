@@ -274,6 +274,70 @@ Content-Type: application/json
 ```
 
 ## Users API
+### Add/Update users
+
+```
+POST http://api.chatbottle.co/v2/bots/{chatbottle bot token}/users/ HTTP/1.1
+Content-Type: application/json
+Host: api.chatbottle.co
+Content-Length: 250
+
+[
+  {
+    "id": "802455339884571",
+    "sessions": 71,
+    "lastSessionTime": 1473861623047,
+    "attributes": {
+      "firstName": "John",
+      "lastName": "Doe",
+      "gender": 1,
+      "timezone": -8,
+      "locale": "en-US",
+      "profilePic": "https://lh4.googleusercontent.com/-62fqwmOS7-U/AAAAAAAAAAI/AAAAAAAAHbo/BffLhPbHB5k/photo.jpg?sz=50"
+    },
+    "customAttributes": {
+      "age": 29,
+      "isImported": true,
+      "email": "john@chatbottle.co",
+      "tags": [
+        "visitor",
+        "prospect"
+      ]
+    }
+  }
+]
+```
+
+Parameters
+
+| Name                  | Type   | Optional | Description                                                                     |
+|-----------------------|--------|----------|---------------------------------------------------------------------------------|
+| id                    | string | no       | The bot user id for the current platform (Messenger, Telegram, Kik, etc)        |
+| sessions              | long   | yes      | The number of session between the user and the bot                              |
+| lastSessionTime       | long   | yes      | Last time the user had session with the bot                                     |
+| attributes.firstName  | string | yes      | First name of the user                                                          |
+| attributes.lastName   | string | yes      | Last name of the user                                                           |
+| attributes.gender     | int    | yes      | Gender of the user. use 1 for male, 2 for female and leave it blank if unknown. |
+| attributes.timezone   | int    | yes      | The user's timezone                                                             |
+| attributes.locale     | string | yes      | The user's locale                                                               |
+| attributes.profilePic | string | yes      | The url to the user's picture                                                   |
+| customAttributes      | object | yes      | The object with user defined data. See the request JSON for more details.       |
+
+
+#### Response
+```
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "removed": [
+     "802455339884571",
+     "802455573845370"
+    }
+  ]
+}
+```
+
 ### List users
 List all users the bot had conversations with.
 
