@@ -333,6 +333,31 @@ Content-Type: application/json
 }
 ```
 
+### Update user
+
+```
+PUT http://api.chatbottle.co/v2/bots/{chatbottle bot token}/users/{user id} HTTP/1.1
+Content-Type: application/json
+
+{
+  "customAttributes": {
+    "age": 291 
+  }
+}
+```
+ 
+#### Response
+```
+HTTP/1.1 200 OK
+Content-Type: application/json 
+
+{
+  "CustomAttributes": {
+    "age": 291
+  }
+}
+```
+
 ### List users
 List all users the bot had conversations with.
 
