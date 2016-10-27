@@ -3,11 +3,8 @@
 ## Overview
 
 1. Who can help me build an integration?
-1. [ChatBottle Node.js client](https://github.com/chatbottle/chatbottle-api#nodejs-via-npm) for Facebook Messenger
-1. [ChatBottle REST API for Facebook Messenger](https://github.com/chatbottle/chatbottle-api#http-rest-for-messenger)
-1. [ChatBottle REST API for Telegram](https://github.com/chatbottle/chatbottle-api#http-rest-for-telegram)
-1. [ChatBottle Generic REST API](https://github.com/chatbottle/chatbottle-api#generic-messenger-telegram-slack-etc) (Messenger, Slack, Kik, Telegram Skype)
-1. [Users API] (https://github.com/chatbottle/chatbottle-api#users-api)
+1. [ChatBottle Messages API](https://github.com/chatbottle/chatbottle-api#http-rest-for-messenger)
+1. [ChatBottle Users API] (https://github.com/chatbottle/chatbottle-api#users-api)
 
 ### Who can help me?
 If you have questions, you can always [email](mailto:agamanuk@gmail.com) or skype us(gamanuk_alexander)! If you found a bug feel free to [create an issue](https://github.com/chatbottle/chatbottle-api/issues). 
