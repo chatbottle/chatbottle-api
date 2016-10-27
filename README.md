@@ -314,3 +314,30 @@ Content-Type: application/json
   ]
 }
 ```
+
+### Delete users
+
+```
+DELETE http://api.chatbottle.co/v2/bots/{chatbottle bot token}/users/{user ids} HTTP/1.1
+```
+
+Parameters
+
+| Name   | Type   | Description                                                                           |
+|--------|--------|---------------------------------------------------------------------------------------|
+| user ids | string | The comma-separated list of platform (Messenger, Telegram, Kik) user ids you want to delete.     |
+
+#### Response
+```
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "removed": [
+     "802455339884571",
+     "802455573845370"
+    }
+  ]
+}
+```
+
