@@ -272,3 +272,38 @@ Content-Type: application/json
 
 {"success":true}
 ```
+
+## Users API
+### List users
+List all users the bot had conversations with.
+
+```
+GET http://api.chatbottle.co/v2/bots/264219e7d1c9276d0bead94e40eabe78c0ecd7ef/users/ HTTP/1.1
+```
+
+#### Response
+```
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "Total": 2,
+  "From": 0,
+  "Size": 1000,
+  "Items": [
+    {
+      "Sessions": 9,
+      "LastSession": "2016-10-16T11:21:08.5748723Z",
+      "Id": "1604391129817458",
+      "Created": "2016-09-17T10:27:58.8343145Z"
+    },
+    {
+      "Sessions": 116,
+      "LastSession": "2016-10-25T12:48:21.5421458Z",
+      "LastSessionTime": 1477561370618,
+      "Id": "802455339884571",
+      "Created": "2016-09-14T14:00:23.0630373Z"
+    }
+  ]
+}
+```
