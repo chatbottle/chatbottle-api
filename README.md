@@ -3,7 +3,7 @@
 ## Overview
 
 1. Who can help me build an integration?
-1. [ChatBottle Messages API](https://github.com/chatbottle/chatbottle-api#http-rest-for-messenger)
+1. [ChatBottle Messages API](https://github.com/chatbottle/chatbottle-api#messages-api)
 1. [ChatBottle Users API] (https://github.com/chatbottle/chatbottle-api#users-api)
 
 ### Who can help me?
