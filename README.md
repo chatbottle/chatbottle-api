@@ -273,6 +273,7 @@ Content-Type: application/json
 
 ## Users API
 ### Add users
+ATTENTION, POST overrides an existing user based on userId. Use it only for import.
 
 ```
 POST http://api.chatbottle.co/v2/bots/{chatbottle bot token}/users/ HTTP/1.1
