@@ -330,11 +330,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "removed": [
-     "802455339884571",
-     "802455573845370"
-    }
-  ]
+  "imported": 245225  
 }
 ```
 
