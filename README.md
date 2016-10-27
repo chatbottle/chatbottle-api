@@ -296,6 +296,7 @@ Content-Length: 250
       "profilePic": "https://lh4.googleusercontent.com/-62fqwmOS7-U/AAAAAAAAAAI/AAAAAAAAHbo/BffLhPbHB5k/photo.jpg?sz=50"
     },
     "customAttributes": {
+      "field1": "field value",
       "age": 29,
       "isImported": true,
       "email": "john@chatbottle.co",
