@@ -167,7 +167,7 @@ Content-Length: 107
 Note: _ChatBottle accepts any Telegram structured message. Just forward everything you send or receive from Telegram._
 
 ------
-### Generic (Messenger, Telegram, Slack, etc) 
+### Generic (Messenger, Telegram, Slack, Kik, Line, Viber, Skype) 
 
 Make a `POST` request to `https://api.chatbottle.co/v2/updates/{token}/` with your ChatBottle bot's unique authorization token. Make sure to set the 'Content-Type' header to 'application/json'.
 
