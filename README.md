@@ -25,51 +25,6 @@ All API access is over HTTPS, and accessed from the `https://api.chatbottle.co`.
 ## Messages API
 - To use the **Messages API** you need to know your **ChatBottle bot's authorization token**. You can find it at the developers dashboard.
 
-### Node.js ChatBottle client for Facebook Messenger 
-
-#### Node.js via NPM
-
-#### Install NPM
-ChatBottle is avialable via NPM
-
-`
-npm install --save chatbottle-api-nodejs
-`
-
-#### Include chatbottle
-```
-var chatbottle = require('./chatbottle-api-nodejs')(process.env.CHATBOTTLE_API_TOKEN).facebook;
-```
-
-#### Log whenever your webhook is called
-```
-app.post(webHookPath, function (req, res) {
-    chatbottle.logIncoming(req.body);
-    const messagingEvents = req.body.entry[0].messaging;
-    if (messagingEvents.length && messagingEvents[0].message && messagingEvents[0].message.text) {
-        const event = req.body.entry[0].messaging[0];
-        const sender = event.sender.id;
-        const text = event.message.text;
-        const requestData = {
-            url: 'https://graph.facebook.com/v2.6/me/messages',
-            qs: { access_token: process.env.FACEBOOK_PAGE_TOKEN },
-            method: 'POST',
-            json: {
-                recipient: { id: sender },
-                message: {
-                    text: 'ECHO: ' + text
-                }
-            }
-        };
-        request(requestData);
-    }
-    res.sendStatus(200);
-});
-```
-
-_For complete example see: https://github.com/chatbottle/chatbottle-api-nodejs/blob/master/src/facebook-example.js_
-
--------
 
 ### HTTP REST for Messenger
 
