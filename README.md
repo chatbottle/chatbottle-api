@@ -75,33 +75,32 @@ _For complete example see: https://github.com/chatbottle/chatbottle-api-nodejs/b
 
 Make a `POST` request to `https://api.chatbottle.co/v2/updates/messenger/{token}/` with your ChatBottle Bot Authorization token. Make sure to set the 'Content-Type' header to 'application/json'.
 
-#### 1. Subscribe to messages, message_echoes, message_deliveries and message_reads fields.
+#### 1. Subscribe to messages, message_echoes and message_reads fields.
 
 Go to your bot's webhook settings and edit Page Subscription Fields. 
-Subscribe to messages, message_echoes, message_deliveries and message_reads fields
+Subscribe to messages, message_echoes and message_reads fields
 
 - Go to https://developers.facebook.com/apps/
 - Click to the bot you're connecting
 - Open Webhooks tab.
 
-Note: Your bot can be subscribed to other fields as well. ChatBottle requires only messages, message_echoes, message_deliveries and message_reads fields.
+Note: Your bot can be subscribed to other fields as well. ChatBottle requires only messages, message_echoes and message_reads fields.
 
 
 ![Subscibe to Facebook Messenger fields and forward to ChatBottle](http://photos.chatbottle.co/static/fb-subscription-fields.png)
 
-#### 2. Send message_echoes, message_deliveries, message_reads and incoming messages to ChatBottle API
-Send the json content of message_echoes, message_deliveries, message_reads and incoming messages received from Messenger to ChatBottle via the API. 
+#### 2. Send message_echoes, message_reads and incoming messages to ChatBottle API
+Send the json content of message_echoes, message_reads and incoming messages received from Messenger to ChatBottle via the API. 
 Learn more: 
 
 https://developers.facebook.com/docs/messenger-platform/webhook-reference/message-echo 
-https://developers.facebook.com/docs/messenger-platform/webhook-reference/message-delivered 
 https://developers.facebook.com/docs/messenger-platform/webhook-reference/message-received 
 https://developers.facebook.com/docs/messenger-platform/webhook-reference/message-read
 
-The example bellow is for incoming messages. Do the same for echo, delivery and read messages as well. 
+The example bellow is for incoming messages. Do the same for echo and read messages as well. 
 Just forward to us everything you get from Facebook.
 
-##### Full INCOMING, ECHO, DELIVERY and READ request example(copy, paste and execute it)
+##### Full INCOMING, ECHO and READ request example(copy, paste and execute it)
 ```
 POST https://api.chatbottle.co/v2/updates/messenger/9eb21ef4607778142802f597b3b44a3c383847ae/ HTTP/1.1
 Content-Type: application/json
