@@ -12,7 +12,7 @@ If you have questions, you can always [email](mailto:agamanuk@gmail.com) or skyp
 ## Getting Started
 This is a simplified walkthrough to see the platform in action. Read the [API Guide](https://github.com/chatbottle/chatbottle-api#api) to learn about the features in more detail.
 
-1. Register on [ChatMetrics](https://chatmetrics.io/) using Facebook or Google account;
+1. Register on [ChatMetrics](https://botmakers.net/) using Facebook or Google account;
 2. Register a bot;
 3. Every time your bots send or receive a message call ChatBottle API. Use bot's unique generated **Authorization token** to make calls.
 
